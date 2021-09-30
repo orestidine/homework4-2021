@@ -91,7 +91,8 @@ padding: 10px;
 }
 
 .rowhead{
-  border: 2px black;
+  border-right: 2px solid black;
+  border-top: 2px solid black
 }
 
 
@@ -113,11 +114,11 @@ thead tr:first-child th:first-child{
 thead tr:last-child th:last-child{
   border-top-right-radius: 50px;
 }
-tr th:first-child{
-border-bottom-left-radius: 50px;
+tbody tr:last-child th:first-child{
+  border-bottom-left-radius: 50px;
 }
-tr th:first-child{ 
- border-bottom-right-radius: 50px;
+tbody tr:last-child td:last-child{
+  border-bottom-right-radius: 50px;
 }
 
 
