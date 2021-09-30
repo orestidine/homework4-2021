@@ -30,54 +30,95 @@ body{
   margin: 1.2em;
   background-size: cover ;
   background-position: center;
-
+  font-family: 'Andika', sans-serif;
+  background-image: url("../images/pigeon-background.JPEG");
+  background-color: #DDDDDD;
   /*Req 1*/
 }
 
 h1{
   color: #c12258;
   font-size: 2em;
-
+  size: 32px center;
+  line-height: 2;
+  font-size: 32px
   /*Req 2*/
 }
 
 p{
-  
+  padding-top: 15px;
+}
+
+* :focus{
+  border: 3px dashed #417243;
 }
 
 a{
-  
+  font-size: 16px;
+  color: #B21F50;
+  text-decoration: wavy underline;
 }
 
 /*Req 5*/
 /*Add selector and rule here*/
 
 
+tr:nth-child(even){
+  background-color: #D1D1D1;
+}
+tr:nth-child(odd){
+  background-color: transparent;
+}
+
+tr:hover{
+  background-color: rgba(49.4, 3.1, 14.5, 0.25);
+
+}
 
 td{
-  
+text-align: center;
+border-top: 2px solid black;
+padding: 10px;
 }
 
 
 .colhead{
   color: #FFFFFF;
-
+  min-width: 125px;
+  padding: 10px;
+  background-color: #7e0825;
+  text-transform: uppercase;
 }
 
 .rowhead{
-
+  border: 2px black;
 }
 
 
 table{
     border: 5px solid #000000;
+    position: sticky;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* I gave you the selector, but not the property-value pair. 
 You can use Inspect Element or your editor to find selectors. */
-thead tr:first-child th:first-child{}
+thead tr:first-child th:first-child{
+  border-top-left-radius: 50px;
+}
 
 /*Add selectors and rules here*/
+thead tr:last-child th:last-child{
+  border-top-right-radius: 50px;
+}
+tr th:first-child{
+border-bottom-left-radius: 50px;
+}
+tr th:first-child{ 
+ border-bottom-right-radius: 50px;
+}
 
 
 
@@ -86,4 +127,9 @@ footer{
   background:#000000;
   text-align:center;
   color: #FFFFFF;
+  min-height: 75px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
