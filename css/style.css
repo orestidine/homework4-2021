@@ -39,9 +39,8 @@ body{
 h1{
   color: #c12258;
   font-size: 2em;
-  size: 32px center;
   line-height: 2;
-  font-size: 32px
+  text-align: center;
   /*Req 2*/
 }
 
